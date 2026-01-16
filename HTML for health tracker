@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Health Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Smart Health Tracker</h1>
+
+    <!-- Water Intake -->
+    <div class="card">
+        <h2>💧 Water Intake Tracker</h2>
+        <input type="number" id="waterInput" placeholder="Enter water (ml)">
+        <button onclick="addWater()">Add</button>
+        <p>Total Water: <span id="waterTotal">0</span> ml</p>
+    </div>
+
+    <!-- Calorie Tracker -->
+    <div class="card">
+        <h2>🍎 Calorie Tracker</h2>
+        <input type="number" id="calorieInput" placeholder="Enter calories">
+        <button onclick="addCalories()">Add</button>
+        <p>Total Calories: <span id="calorieTotal">0</span> kcal</p>
+    </div>
+
+    <!-- BMI Calculator -->
+    <div class="card">
+        <h2>⚖️ BMI Calculator</h2>
+        <input type="number" id="weight" placeholder="Weight (kg)">
+        <input type="number" id="height" placeholder="Height (cm)">
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        <p>Your BMI: <span id="bmiResult">-</span></p>
+    </div>
+
+    <!-- Health Tips -->
+    <div class="card">
+        <h2>🧠 Health Tips</h2>
+        <ul>
+            <li>Drink at least 2–3 liters of water daily</li>
+            <li>Eat balanced meals</li>
+            <li>Exercise regularly</li>
+            <li>Get enough sleep</li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
